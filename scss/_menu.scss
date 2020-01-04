@@ -92,7 +92,8 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url();
+            background: url('../img/portrait1.jpg');
+            opacity: 1;
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
