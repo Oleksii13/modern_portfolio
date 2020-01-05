@@ -2,14 +2,16 @@
   "name": "modern_portfolio",
   "version": "1.0.0",
   "description": "Responsive portfolio website",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "start": "node app.js"
   },
   "author": "Oleksii Nuzhdin",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "node-sass": "^4.13.0"
   }
 }
