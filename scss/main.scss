@@ -98,12 +98,20 @@ main {
 // Work/Projects
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
 
   img {
     width: 100%;
     border: 3px #fff solid;
+    overflow: hidden;
 
     &:hover {
       opacity: 0.5;
@@ -111,6 +119,14 @@ main {
       @include easeOut;
     }
   }
+
+  .readme {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+
+
 }
 
 //Contact Page
